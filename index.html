@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colleen Skemp - Movement Facilitator & Cooperative Builder</title>
+    <style>
+        /* Josh-inspired accessible styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            background: #fefcfb; /* Warm off-white like Josh's */
+            font-size: 16px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.025em;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+        
+        .contact {
+            font-size: 1rem;
+            color: #2d3748;
+            line-height: 1.5;
+        }
+        
+        .contact a {
+            color: #3182ce;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .contact a:hover {
+            color: #2c5aa0;
+            text-decoration: underline;
+        }
+        
+        .contact a:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
+        }
+        
+        h2 {
+            font-size: 1.75rem;
+            color: #1a202c;
+            margin: 2.5rem 0 1.5rem 0;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            color: #2d3748;
+            margin: 1.5rem 0 0.75rem 0;
+            font-weight: 600;
+        }
+        
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            color: #2d3748;
+        }
+        
+        .job-section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid #e2e8f0;
+            position: relative;
+        }
+        
+        .job-header {
+            margin-bottom: 1rem;
+        }
+        
+        .job-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a202c;
+            margin-bottom: 0.25rem;
+        }
+        
+        .job-company {
+            font-size: 1.1rem;
+            color: #3182ce;
+            font-style: italic;
+            margin-bottom: 0.25rem;
+        }
+        
+        .job-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 1rem;
+            color: #718096;
+            margin-bottom: 0.5rem;
+        }
+        
+        .job-description {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+        
+        .job-subsection {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid #cbd5e0;
+            position: relative;
+        }
+        
+        .subsection-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            margin: 0 0 1rem 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        
+        li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        li::before {
+            content: "•";
+            color: #3182ce;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        strong {
+            color: #1a202c;
+            font-weight: 600;
+        }
+        
+        .skills-section {
+            margin-top: 2rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .skill-category {
+            background: #f7fafc;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 3px solid #3182ce;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .skill-category h4 {
+            color: #1a202c;
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        .skill-list {
+            font-size: 1rem;
+            color: #4a5568;
+            line-height: 1.6;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+            text-align: center;
+            color: #718096;
+        }
+        
+        .footer-note {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .haiku {
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #4a5568;
+        }
+        
+        /* Focus states for accessibility */
+        *:focus {
+            outline: 2px solid #3182ce;
+            outline-offset: 2px;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 2rem 1rem;
+                font-size: 15px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+                margin: 3rem 0 1.5rem 0;
+            }
+            
+            .intro {
+                font-size: 1.1rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .job-meta {
+                flex-direction: column;
+                gap: 0.25rem;
+            }
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+                font-size: 11pt;
+                line-height: 1.4;
+                padding: 1rem;
+            }
+            
+            h1 { font-size: 20pt; }
+            h2 { font-size: 16pt; }
+            h3 { font-size: 12pt; }
+            
+            .job-section {
+                break-inside: avoid;
+                margin-bottom: 1.5rem;
+            }
+            
+            footer {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Colleen Skemp</h1>
+        <div class="subtitle">Movement Facilitator & Cooperative Builder</div>
+        <div class="contact">
+            LaCrosse, Wisconsin<br>
+            <a href="tel:847-997-9688">847.997.9688</a> | 
+            <a href="mailto:colleenskemp@gmail.com">colleenskemp@gmail.com</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="intro">
+                <strong>Cooperative movement builder with 10+ years of experience transforming organizational culture through liberation-centered practices.</strong> Expertise in facilitation, conflict transformation, and democratic governance within values-driven environments. Proven track record scaling cooperative teams, implementing equity frameworks, and fostering shared leadership models. Passionate about supporting movements for social justice through human-centered organizational development and collective power building.
+            </div>
+        </section>
+
+        <section>
+            <h2>Movement & Cooperative Experience</h2>
+            
+            <div class="job-section">
+                <div class="job-header">
+                    <div class="job-title">People Circle Lead & Movement Facilitator</div>
+                    <div class="job-company">CoLab Cooperative</div>
+                    <div class="job-meta">
+                        <span>Aug 2015 — Present</span>
+                        <span>•</span>
+                        <span>Remote</span>
+                    </div>
+                </div>
+                <div class="job-description">Remote cooperative focused on technology for social good</div>
+                
+                <div class="job-subsection">
+                    <div class="subsection-title">Cooperative Governance & Democratic Practice</div>
+                    <ul>
+                        <li><strong>Co-created and facilitated democratic decision-making processes</strong> using sociocratic principles, empowering all 30+ worker-owners in shared leadership and fostering culture of innovation and collective ownership</li>
+                        <li><strong>Designed and implemented conflict resolution framework</strong> for cooperative workplace, significantly reducing interpersonal tensions and reclaiming valuable collective energy for movement work</li>
+                        <li><strong>Established mentorship and leadership development programs</strong> focused on advancing collective leadership capacity and strengthening cooperative governance pipeline</li>
+                    </ul>
+                </div>
+                
+                <div class="job-subsection">
+                    <div class="subsection-title">Liberation-Centered Organizational Development</div>
+                    <ul>
+                        <li><strong>Founded and facilitated "Diversity Circle"</strong> - dedicated anti-oppression working group responsible for comprehensive DEIB strategy, providing strategic guidance and oversight to influence organizational culture change</li>
+                        <li><strong>Pioneered innovative "Rate Standard" pay equity policy</strong>, eliminating wage disparities across organization and increasing applications from underrepresented communities by 40%</li>
+                        <li><strong>Transformed hiring processes</strong> through anti-oppression lens, resulting in 30% increase in workforce diversity over 5 years and creating pipeline for diverse movement leadership</li>
+                    </ul>
+                </div>
+                
+                <div class="job-subsection">
+                    <div class="subsection-title">Facilitation & Political Education</div>
+                    <ul>
+                        <li><strong>Facilitated comprehensive employee engagement strategy</strong> development, resulting in significant increases in collective satisfaction and cooperative cohesion over 18 months</li>
+                        <li><strong>Created and delivered cutting-edge cultural onboarding program</strong> emphasizing cooperative values and anti-oppression principles, accelerating new member integration and strengthening collective identity</li>
+                        <li><strong>Developed and facilitated DEIB training programs</strong>, building organizational capacity for difficult conversations about power, privilege, and creating psychologically safe spaces for all members</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-section">
+                <div class="job-header">
+                    <div class="job-title">Co-Founder & Operations Facilitator</div>
+                    <div class="job-company">Global Solutions Alliance</div>
+                    <div class="job-meta">
+                        <span>2020 — Present</span>
+                        <span>•</span>
+                        <span>Remote</span>
+                    </div>
+                </div>
+                <div class="job-description">International nonprofit cooperative focused on climate justice and collective impact</div>
+                <ul>
+                    <li><strong>Co-founded international movement cooperative</strong> focused on holistic models for climate and social justice action</li>
+                    <li><strong>Facilitated internal operations and strategic planning processes</strong>, driving collective growth, goal achievement, and maximizing impact for climate justice</li>
+                    <li><strong>Designed and delivered presentations to movement funders</strong>, effectively communicating cooperative vision and securing resources for collective action</li>
+                </ul>
+            </div>
+
+            <div class="job-section">
+                <div class="job-header">
+                    <div class="job-title">Movement Technology Facilitator</div>
+                    <div class="job-company">Project Drawdown</div>
+                    <div class="job-meta">
+                        <span>2018 — 2020</span>
+                        <span>•</span>
+                        <span>Remote</span>
+                    </div>
+                </div>
+                <div class="job-description">Climate solutions research and action organization</div>
+                <ul>
+                    <li><strong>Facilitated translation of critical climate research</strong> from proprietary to open-source format, democratizing access for climate justice researchers and grassroots organizers</li>
+                    <li><strong>Developed accessible tools and interfaces</strong> to support movement organizations in climate action planning and impact modeling</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education & Political Development</h2>
+            
+            <div class="job-section">
+                <div class="job-header">
+                    <div class="job-title">Next Economy MBA</div>
+                    <div class="job-company">Lift Economy</div>
+                    <div class="job-meta">
+                        <span>Jun 2019 — Mar 2020</span>
+                    </div>
+                </div>
+                <div class="job-description">Focus on cooperative economics and solidarity economy principles</div>
+            </div>
+            
+            <div class="job-section">
+                <div class="job-header">
+                    <div class="job-title">Cooperative Leadership Certification</div>
+                    <div class="job-company">Round Sky Solutions</div>
+                    <div class="job-meta">
+                        <span>Jan 2023</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="job-section">
+                <div class="job-header">
+                    <div class="job-title">Bachelor of Arts - Writing</div>
+                    <div class="job-company">Ithaca College</div>
+                    <div class="job-meta">
+                        <span>Mar 2020</span>
+                    </div>
+                </div>
+                <div class="job-description">Graduated Magna Cum Laude with Honors</div>
+            </div>
+        </section>
+
+        <section class="skills-section">
+            <h2>Facilitation & Movement Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Process Facilitation</h4>
+                    <div class="skill-list">Democratic Decision-Making • Conflict Transformation • Mediation • Nonviolent Communication</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Movement Building</h4>
+                    <div class="skill-list">Anti-Oppression Training • Political Education • Coalition Building • Cross-Movement Collaboration</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Cooperative Leadership</h4>
+                    <div class="skill-list">Sociocratic Governance • Shared Leadership • Collective Power Building • Cooperative Development</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Organizational Change</h4>
+                    <div class="skill-list">Strategic Planning • Policy Development • Cultural Transformation • Liberation Pedagogy</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-note">Built with accessibility and cooperative values in mind</div>
+        <div class="haiku">
+            Hearts open wider<br>
+            When we move toward each other<br>
+            Cooperation blooms
+        </div>
+    </footer>
+</body>
+</html>
