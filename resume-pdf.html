@@ -13,8 +13,8 @@
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.4;
-            color: #2d3748;
+            line-height: 1.5;
+            color: #333;
             max-width: 8.5in;
             margin: 0 auto;
             padding: 0.75in;
@@ -26,28 +26,27 @@
             text-align: center;
             margin-bottom: 1.5rem;
             padding-bottom: 1rem;
-            border-bottom: 1px solid #e2e8f0;
+            border-bottom: 2px solid #ddd;
         }
         
         h1 {
-            font-size: 1.8rem;
+            font-size: 24pt;
             font-weight: 700;
             color: #1a202c;
             margin-bottom: 0.3rem;
-            letter-spacing: -0.025em;
         }
         
         .subtitle {
-            font-size: 1rem;
+            font-size: 14pt;
             color: #4a5568;
             margin-bottom: 0.5rem;
             font-weight: 400;
         }
         
         .contact {
-            font-size: 0.9rem;
-            color: #2d3748;
-            line-height: 1.3;
+            font-size: 11pt;
+            color: #333;
+            line-height: 1.4;
         }
         
         .contact a {
@@ -56,27 +55,25 @@
         }
         
         h2 {
-            font-size: 1.2rem;
+            font-size: 14pt;
             color: #1a202c;
-            margin: 1.5rem 0 0.75rem 0;
+            margin: 1.25rem 0 0.75rem 0;
             font-weight: 600;
-            letter-spacing: -0.025em;
-            page-break-after: avoid;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.25rem;
         }
         
         .intro {
-            font-size: 0.95rem;
-            line-height: 1.4;
-            margin-bottom: 1.25rem;
-            color: #2d3748;
+            font-size: 11pt;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            color: #333;
+            text-align: justify;
         }
         
         .job-section {
-            margin-bottom: 1.25rem;
-            padding-bottom: 0.75rem;
-            padding-left: 0.75rem;
-            border-left: 2px solid #e2e8f0;
-            page-break-inside: avoid;
+            margin-bottom: 1rem;
+            padding-left: 0;
         }
         
         .job-header {
@@ -84,16 +81,16 @@
         }
         
         .job-title {
-            font-size: 1rem;
-            font-weight: 600;
+            font-size: 12pt;
+            font-weight: 700;
             color: #1a202c;
             margin-bottom: 0.1rem;
         }
         
         .job-company {
-            font-size: 0.95rem;
+            font-size: 11pt;
             color: #1a365d;
-            font-style: italic;
+            font-weight: 600;
             margin-bottom: 0.1rem;
         }
         
@@ -103,49 +100,36 @@
         }
         
         .job-meta {
-            font-size: 0.85rem;
-            color: #718096;
-            margin-bottom: 0.3rem;
+            font-size: 10pt;
+            color: #666;
+            margin-bottom: 0.25rem;
+            font-style: italic;
         }
         
         .job-description {
             font-style: italic;
-            color: #4a5568;
-            margin-bottom: 0.75rem;
-            font-size: 0.9rem;
-        }
-        
-        .job-subsection {
-            margin-bottom: 0.75rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+            font-size: 10pt;
         }
         
         .subsection-title {
-            font-size: 0.9rem;
+            font-size: 11pt;
             font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 0.3rem;
+            color: #1a202c;
+            margin: 0.5rem 0 0.25rem 0;
         }
         
         ul {
-            margin: 0 0 0.5rem 0;
-            padding-left: 0;
-            list-style: none;
+            margin: 0 0 0.5rem 1rem;
+            padding: 0;
         }
         
         li {
-            margin-bottom: 0.4rem;
-            padding-left: 1rem;
-            position: relative;
-            line-height: 1.3;
-            font-size: 0.9rem;
-        }
-        
-        li::before {
-            content: "•";
-            color: #1a365d;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
+            margin-bottom: 0.25rem;
+            line-height: 1.4;
+            font-size: 10pt;
+            list-style-type: disc;
         }
         
         strong {
@@ -157,66 +141,59 @@
             margin-top: 1rem;
         }
         
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
-            margin: 0.75rem 0;
+        .skills-list {
+            display: block;
+            margin: 0.5rem 0;
         }
         
         .skill-category {
-            background: #f7fafc;
-            padding: 0.6rem;
-            border-radius: 4px;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            background: #f8f9fa;
             border-left: 3px solid #1a365d;
-            break-inside: avoid;
         }
         
         .skill-category h4 {
             color: #1a202c;
-            margin-bottom: 0.4rem;
-            font-size: 0.95rem;
+            margin-bottom: 0.25rem;
+            font-size: 11pt;
             font-weight: 600;
         }
         
-        .skill-list {
-            font-size: 0.85rem;
-            color: #4a5568;
-            line-height: 1.3;
+        .skill-category .skill-list {
+            font-size: 10pt;
+            color: #444;
+            line-height: 1.4;
         }
         
-        .personal-interests {
+        .personal-section {
             margin-top: 1rem;
         }
         
-        .personal-interests ul {
-            margin: 0.5rem 0;
+        .personal-section ul {
+            margin: 0.5rem 0 0 1rem;
         }
         
-        .personal-interests li {
-            font-size: 0.9rem;
+        .personal-section li {
+            font-size: 10pt;
             margin-bottom: 0.3rem;
         }
         
         footer {
-            margin-top: 1.5rem;
-            padding-top: 0.75rem;
-            border-top: 1px solid #e2e8f0;
+            margin-top: 1rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #ddd;
             text-align: center;
-            color: #718096;
+            color: #666;
+            font-size: 9pt;
         }
         
-        .footer-note {
-            font-size: 0.8rem;
-        }
-        
-        /* PDF/Print specific optimizations */
+        /* Ensure everything prints correctly */
         @media print {
             body {
                 background: white !important;
                 color: black !important;
                 font-size: 10pt;
-                line-height: 1.3;
                 margin: 0;
                 padding: 0.5in;
             }
@@ -227,55 +204,29 @@
             }
             
             h1 { 
-                font-size: 16pt;
-                page-break-after: avoid;
+                font-size: 20pt;
             }
             
             h2 { 
                 font-size: 12pt;
-                page-break-after: avoid;
-                margin-top: 12pt;
+                margin-top: 14pt;
                 margin-bottom: 6pt;
             }
             
             .job-section {
                 page-break-inside: avoid;
-                margin-bottom: 10pt;
-            }
-            
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 8pt;
+                margin-bottom: 12pt;
             }
             
             .skill-category {
                 page-break-inside: avoid;
+                margin-bottom: 8pt;
             }
             
-            /* Ensure links are readable in PDF */
             a {
-                color: #1a365d !important;
+                color: black !important;
                 text-decoration: none !important;
             }
-            
-            /* Prevent orphaned headers */
-            h2, h3, .job-title {
-                page-break-after: avoid;
-            }
-            
-            /* Keep job sections together */
-            .job-header {
-                page-break-after: avoid;
-            }
-        }
-        
-        /* Force better spacing control */
-        .no-break {
-            page-break-inside: avoid;
-        }
-        
-        .page-break-before {
-            page-break-before: always;
         }
     </style>
 </head>
@@ -285,18 +236,18 @@
         <div class="subtitle">Movement Facilitator, Conflict Transformer & Cooperative Builder</div>
         <div class="contact">
             LaCrosse, Wisconsin<br>
-            <a href="tel:847-997-9688">847.997.9688</a> | 
-            <a href="mailto:colleenskemp@gmail.com">colleenskemp@gmail.com</a><br>
-            <a href="https://www.linkedin.com/in/colleen-skemp/">linkedin.com/in/colleen-skemp</a>
+            847.997.9688 | colleenskemp@gmail.com<br>
+            linkedin.com/in/colleen-skemp
         </div>
     </header>
 
     <main>
-        <section class="no-break">
+        <section>
             <h2>Professional Summary</h2>
             <div class="intro">
                 Movement facilitator with 10+ years of experience transforming workplace cultures to empower workers and foster psychological safety. <strong>My mission is to cultivate and share collaboration, communication, and facilitation skills that empower democratic workplaces and justice movements.</strong>
-                <br><br>
+            </div>
+            <div class="intro">
                 I specialize in facilitation, conflict transformation, and democratic governance within values-driven environments. Currently, I serve as tech consultant and account manager for 20+ liberation movement organizations, translating their organizational needs into actionable project plans and serving as their chief happiness officer. I simultaneously support cooperative governance, worker care, and strategic development while building solidarity economy networks.
             </div>
         </section>
@@ -307,72 +258,62 @@
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">Business Development Circle Co-Lead</div>
-                    <div class="job-company"><a href="https://colab.coop/">CoLab Cooperative</a></div>
+                    <div class="job-company">CoLab Cooperative</div>
                     <div class="job-meta">Aug 2024 — Present • Remote</div>
                 </div>
                 <div class="job-description">Leading client cultivation and relationship stewardship for movement-oriented organizations</div>
                 
-                <div class="job-subsection">
-                    <div class="subsection-title">Client Portfolio & Relationship Management</div>
-                    <ul>
-                        <li>Maintain portfolio of 20+ movement-oriented clients working in anti-harassment, artist-led justice, racial justice, environmental justice, food equity, and economic justice movements</li>
-                        <li>Provide ongoing client relationship care, maintaining connection and monitoring service satisfaction</li>
-                        <li>Facilitate project discovery sessions using deep listening to understand client needs and develop actionable project plans</li>
-                        <li>Serve as primary liaison to bridge communication gaps and resolve service issues</li>
-                    </ul>
-                </div>
+                <div class="subsection-title">Client Portfolio & Relationship Management</div>
+                <ul>
+                    <li>Maintain portfolio of 20+ movement-oriented clients working in anti-harassment, artist-led justice, racial justice, environmental justice, food equity, and economic justice movements</li>
+                    <li>Provide ongoing client relationship care, maintaining connection and monitoring service satisfaction</li>
+                    <li>Facilitate project discovery sessions using deep listening to understand client needs and develop actionable project plans</li>
+                    <li>Serve as primary liaison to bridge communication gaps and resolve service issues</li>
+                </ul>
                 
-                <div class="job-subsection">
-                    <div class="subsection-title">Proposal Development & Needs Assessment</div>
-                    <ul>
-                        <li>Lead proposal development process from initial client inquiry through project scoping and contract negotiation</li>
-                        <li>Expert in requirements gathering through deep listening and collaborative stakeholder engagement, transforming complex organizational challenges into clear technical and strategic solutions</li>
-                        <li>Cultivate and secure new client relationships through strategic network building with liberation movement organizations</li>
-                    </ul>
-                </div>
+                <div class="subsection-title">Proposal Development & Needs Assessment</div>
+                <ul>
+                    <li>Lead proposal development process from initial client inquiry through project scoping and contract negotiation</li>
+                    <li>Expert in requirements gathering through deep listening and collaborative stakeholder engagement, transforming complex organizational challenges into clear technical and strategic solutions</li>
+                    <li>Cultivate and secure new client relationships through strategic network building with liberation movement organizations</li>
+                </ul>
             </div>
 
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">People Circle Lead & Movement Facilitator</div>
-                    <div class="job-company"><a href="https://colab.coop/">CoLab Cooperative</a></div>
+                    <div class="job-company">CoLab Cooperative</div>
                     <div class="job-meta">Aug 2015 — Present • Remote</div>
                 </div>
                 <div class="job-description">Worker care, policy development, and member decision facilitation for 30+ cooperative worker-owners</div>
                 
-                <div class="job-subsection">
-                    <div class="subsection-title">Cooperative Governance & Democratic Practice</div>
-                    <ul>
-                        <li>Co-created and facilitated democratic decision-making processes using sociocratic principles, empowering all 30+ worker-owners in shared leadership and fostering culture of innovation and collective ownership</li>
-                        <li>Designed and implemented conflict resolution framework for cooperative workplace, significantly reducing interpersonal tensions and reclaiming valuable collective energy for movement work</li>
-                        <li>Cultivated cooperative leaders through mentorship and direct leadership development over the years at CoLab</li>
-                        <li>Authored comprehensive Worker Handbook, Code of Conduct, and Communication Guidelines establishing shared democratic practices and cooperative values</li>
-                    </ul>
-                </div>
+                <div class="subsection-title">Cooperative Governance & Democratic Practice</div>
+                <ul>
+                    <li>Co-created and facilitated democratic decision-making processes using sociocratic principles, empowering all 30+ worker-owners in shared leadership and fostering culture of innovation and collective ownership</li>
+                    <li>Designed and implemented conflict resolution framework for cooperative workplace, significantly reducing interpersonal tensions and reclaiming valuable collective energy for movement work</li>
+                    <li>Cultivated cooperative leaders through mentorship and direct leadership development over the years at CoLab</li>
+                    <li>Authored comprehensive Worker Handbook, Code of Conduct, and Communication Guidelines establishing shared democratic practices and cooperative values</li>
+                </ul>
                 
-                <div class="job-subsection">
-                    <div class="subsection-title">Worker Support & Organizational Development</div>
-                    <ul>
-                        <li>Founded and facilitated "Diversity Circle" - dedicated anti-oppression working group responsible for comprehensive DEIB strategy, providing strategic guidance and oversight to influence organizational culture change</li>
-                        <li>Created & implemented "Rate Standard" pay equity policy eliminating location and identity-based wage disparities</li>
-                        <li>Transformed hiring processes through anti-oppression lens, significantly increasing workforce diversity and creating pipeline for diverse movement leadership</li>
-                        <li>Scaled cooperative from 7 to 30+ worker-owners over 10 years while creating policies and practices that cultivated a healthy, psychologically safe democratic workplace through comprehensive worker support and care framework</li>
-                    </ul>
-                </div>
+                <div class="subsection-title">Worker Support & Organizational Development</div>
+                <ul>
+                    <li>Founded and facilitated "Diversity Circle" - dedicated anti-oppression working group responsible for comprehensive DEIB strategy, providing strategic guidance and oversight to influence organizational culture change</li>
+                    <li>Created & implemented "Rate Standard" pay equity policy eliminating location and identity-based wage disparities</li>
+                    <li>Transformed hiring processes through anti-oppression lens, significantly increasing workforce diversity and creating pipeline for diverse movement leadership</li>
+                    <li>Scaled cooperative from 7 to 30+ worker-owners over 10 years while creating policies and practices that cultivated a healthy, psychologically safe democratic workplace through comprehensive worker support and care framework</li>
+                </ul>
                 
-                <div class="job-subsection">
-                    <div class="subsection-title">Facilitation & Cultural Development</div>
-                    <ul>
-                        <li>Created and delivered cultural onboarding program emphasizing cooperative values and anti-oppression principles, accelerating new member integration and strengthening collective identity</li>
-                        <li>Planned and organized summits, facilitated member decisions and strategic retreats using consensus-building and collaborative decision-making methodologies</li>
-                    </ul>
-                </div>
+                <div class="subsection-title">Facilitation & Cultural Development</div>
+                <ul>
+                    <li>Created and delivered cultural onboarding program emphasizing cooperative values and anti-oppression principles, accelerating new member integration and strengthening collective identity</li>
+                    <li>Planned and organized summits, facilitated member decisions and strategic retreats using consensus-building and collaborative decision-making methodologies</li>
+                </ul>
             </div>
 
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">Board Member & Governance Leader</div>
-                    <div class="job-company"><a href="https://colab.coop/">CoLab Cooperative</a></div>
+                    <div class="job-company">CoLab Cooperative</div>
                     <div class="job-meta">2016 — 2021, 2024 — Present • Remote</div>
                 </div>
                 <div class="job-description">Fiduciary oversight and strategic governance for worker-owned cooperative</div>
@@ -387,15 +328,14 @@
             <div class="job-section">
                 <div class="job-header">
                     <div class="job-title">Senior Project Manager</div>
-                    <div class="job-company"><a href="https://colab.coop/">CoLab Cooperative</a></div>
+                    <div class="job-company">CoLab Cooperative</div>
                     <div class="job-meta">Aug 2014 — Aug 2024 • Remote</div>
                 </div>
                 <div class="job-description">Technology project leadership within cooperative structure</div>
                 <ul>
                     <li>Managed over 100 diverse technology projects from inception to implementation for mission-driven clients during tenure</li>
-                    <li><strong>Key Client Work:</strong></li>
-                    <li style="padding-left: 1.5rem;"><strong>Seventh Generation (2015-2020):</strong> Project manager for brand site over 5 years, managing ongoing maintenance, support, and iterative improvements while leading 2 comprehensive redesigns including Drupal migration, regionalization, and global site expansion</li>
-                    <li style="padding-left: 1.5rem;"><strong>Project Drawdown (2018-2020):</strong> Facilitated translation of critical climate research from proprietary to open-source format, democratizing access for climate justice researchers and grassroots organizers; developed accessible tools for movement organizations in climate action planning</li>
+                    <li><strong>Seventh Generation (2015-2020):</strong> Project manager for brand site over 5 years, managing ongoing maintenance, support, and iterative improvements while leading 2 comprehensive redesigns including Drupal migration, regionalization, and global site expansion</li>
+                    <li><strong>Project Drawdown (2018-2020):</strong> Facilitated translation of critical climate research from proprietary to open-source format, democratizing access for climate justice researchers and grassroots organizers; developed accessible tools for movement organizations in climate action planning</li>
                 </ul>
             </div>
 
@@ -424,7 +364,7 @@
                     <div class="job-company">Independent Movement Building</div>
                     <div class="job-meta">2024 — Present</div>
                 </div>
-                <div class="job-description">Building cooperative ecosystem and solidarity economy infrastructure in the Driftless region as part of broader movement strategy. In collaboration with <a href="https://madworc.coop/">MadWorC</a>.</div>
+                <div class="job-description">Building cooperative ecosystem and solidarity economy infrastructure in the Driftless region as part of broader movement strategy. In collaboration with MadWorC.</div>
             </div>
             
             <div class="job-section">
@@ -481,33 +421,36 @@
             </div>
         </section>
 
-        <section class="skills-section no-break">
+        <section class="skills-section">
             <h2>Core Facilitation & Movement Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Process Facilitation</h4>
-                    <div class="skill-list">Democratic Decision-Making • Conflict Transformation • Mediation • Nonviolent Communication • Sociocratic Governance • Multi-Stakeholder Consensus Building</div>
-                </div>
-                <div class="skill-category">
-                    <h4>Team Development & Worker Care</h4>
-                    <div class="skill-list">Building Psychological Safety • Fostering High-Performing Teams • Worker Support & Care • Deep Listening • Active Listening</div>
-                </div>
-                <div class="skill-category">
-                    <h4>Movement Building</h4>
-                    <div class="skill-list">Coalition Building • Cross-Movement Collaboration</div>
-                </div>
-                <div class="skill-category">
-                    <h4>Cooperative Leadership</h4>
-                    <div class="skill-list">Shared Leadership • Collective Power Building • Cooperative Development • Collaborative Decision-Making</div>
-                </div>
-                <div class="skill-category">
-                    <h4>Organizational Change</h4>
-                    <div class="skill-list">Strategic Planning • Policy Development • Cultural Transformation • Revenue Generation • Business Sustainability</div>
-                </div>
+            
+            <div class="skill-category">
+                <h4>Process Facilitation</h4>
+                <div class="skill-list">Democratic Decision-Making • Conflict Transformation • Mediation • Nonviolent Communication • Sociocratic Governance • Multi-Stakeholder Consensus Building</div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Team Development & Worker Care</h4>
+                <div class="skill-list">Building Psychological Safety • Fostering High-Performing Teams • Worker Support & Care • Deep Listening • Active Listening</div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Movement Building</h4>
+                <div class="skill-list">Coalition Building • Cross-Movement Collaboration</div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Cooperative Leadership</h4>
+                <div class="skill-list">Shared Leadership • Collective Power Building • Cooperative Development • Collaborative Decision-Making</div>
+            </div>
+            
+            <div class="skill-category">
+                <h4>Organizational Change</h4>
+                <div class="skill-list">Strategic Planning • Policy Development • Cultural Transformation • Revenue Generation • Business Sustainability</div>
             </div>
         </section>
 
-        <section class="personal-interests no-break">
+        <section class="personal-section">
             <h2>Personal Interests & Additional Skills</h2>
             <ul>
                 <li>Learning Spanish (advanced beginner)</li>
